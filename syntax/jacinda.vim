@@ -4,16 +4,18 @@ if exists('b:current_syntax')
     finish
 endif
 
+syntax match jacComment "\v{\..*$" contains=@Spell
+
 syntax match jacIdentifier "\v[a-z][a-zA-Z0-9]*"
 syntax match jacType "\v[A-Z][a-zA-Z0-9]*"
 
 syntax match jacNum "\v[0-9]+"
 syntax match jacNum "\v[0-9]+\.[0-9]+"
 
-syntax match kempeKeyword "let"
-syntax match kempeKeyword "in"
-syntax match kempeKeyword "val"
-syntax match kempeKeyword "end"
+syntax match jacKeyword "let"
+syntax match jacKeyword "in"
+syntax match jacKeyword "val"
+syntax match jacKeyword "end"
 
 highlight link jacComment Comment
 highlight link jacKeyword Keyword
