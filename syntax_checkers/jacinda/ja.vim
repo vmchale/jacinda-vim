@@ -3,7 +3,7 @@ if exists('g:loaded_syntastic_jacinda_ja_checker')
 endif
 let g:loaded_syntastic_jacinda_ja_checker = 1
 
-let g:syntastic_jacinda_ja_exec = 'kc'
+let g:syntastic_jacinda_ja_exec = 'ja'
 
 function! SyntaxCheckers_jacinda_ja_GetLocList() dict
     let makeprg = self.makeprgBuild({
