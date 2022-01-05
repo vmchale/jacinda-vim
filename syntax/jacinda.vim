@@ -17,10 +17,13 @@ syntax match jacKeyword "in"
 syntax match jacKeyword "val"
 syntax match jacKeyword "end"
 
+syntax region jacRegex start="/" end="/"
+
 highlight link jacComment Comment
 highlight link jacKeyword Keyword
 highlight link jacNum Number
 highlight link jacIdentifier Identifier
 highlight link jacSymbol Special
+highlight link jacRegex String
 
 let b:current_syntax = 'jacinda'
