@@ -16,7 +16,9 @@ syntax keyword jacKeyword let in val end fn
 syntax match jacKeyword ":set"
 
 syntax region jacRegex start="/" end="/"
-syntax region jacString start="'" end="'"
+syntax region jacString start="'" end="'" contains=jacSpecial
+
+syntax match jacSpecial +\\['\\n]+
 
 highlight link jacComment Comment
 highlight link jacKeyword Keyword
@@ -25,5 +27,6 @@ highlight link jacIdentifier Identifier
 highlight link jacSymbol Special
 highlight link jacRegex String
 highlight link jacString String
+highlight link jacSpecial Special
 
 let b:current_syntax = 'jacinda'
