@@ -5,6 +5,7 @@ if exists('b:current_syntax')
 endif
 
 syntax match jacComment "\v\{\..*$" contains=@Spell
+syntax match jacComment "\v#!.*$"
 
 syntax match jacIdentifier "\v[a-z][a-zA-Z0-9]*"
 syntax match jacType "\v[A-Z][a-zA-Z0-9]*"
