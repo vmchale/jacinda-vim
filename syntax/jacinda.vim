@@ -13,7 +13,7 @@ syntax match jacType "\v[A-Z][a-zA-Z0-9]*"
 syntax match jacNum "\v[0-9]+"
 syntax match jacNum "\v[0-9]+\.[0-9]+"
 
-syntax keyword jacKeyword let in val end fn
+syntax keyword jacKeyword let in val end fn if then else
 syntax match jacKeyword ":set"
 syntax match jacKeyword "@include"
 
