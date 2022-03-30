@@ -20,7 +20,7 @@ syntax match jacKeyword "@include"
 syntax region jacRegex start="/" end="/"
 syntax region jacString start="'" end="'" contains=jacSpecial
 
-syntax match jacSpecial +\\['\\n]+
+syntax match jacSpecial +\\['\\nt]+
 
 highlight link jacComment Comment
 highlight link jacKeyword Keyword
