@@ -4,8 +4,12 @@ set smarttab
 
 setl shiftwidth=2
 
-digraphs := 8788
-    \ \\ 955
+setlocal makeprg=ja\ tc\ %
+setlocal errorformat=%Eja:\ %l:%c\ %m
 
-" use ja as a checker
-let g:syntastic_jacinda_checkers = [ 'ja' ]
+function! JaTC()
+    exec 'silent make'
+    exec 'cw'
+endfunction
+
+au BufWritePost *.jac call JaTC()

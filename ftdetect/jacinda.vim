@@ -1,3 +1,1 @@
-augroup jacinda
-    autocmd BufNewFile,BufRead *.jac set filetype=jacinda
-augroup END
+autocmd BufNewFile,BufRead *.jac set filetype=jacinda
