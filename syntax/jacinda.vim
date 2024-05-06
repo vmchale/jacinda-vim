@@ -14,13 +14,14 @@ syntax match jacNum "\v[0-9]+"
 syntax match jacNum "\v[0-9]+\.[0-9]+"
 
 syntax keyword jacKeyword let in val end fn if then else
+syntax keyword jacKeyword asv usv fs rs
 syntax match jacKeyword ":set"
 syntax match jacKeyword "@include"
 
 syntax region jacRegex start="/" end="/"
 syntax region jacString start="'" end="'" contains=jacSpecial
 
-syntax match jacSpecial +\\['\\n]+
+syntax match jacSpecial +\\['\\nt]+
 
 highlight link jacComment Comment
 highlight link jacKeyword Keyword
