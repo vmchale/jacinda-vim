@@ -9,6 +9,7 @@ setlocal errorformat=%Eja:\ %l:%c\ %m
 
 function! JaTC()
     exec 'silent make'
+    exec 'redraw!'
     exec 'cw'
 endfunction
 
