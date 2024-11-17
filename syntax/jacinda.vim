@@ -16,7 +16,6 @@ syntax match jacNum "\v[0-9]+\.[0-9]+"
 syntax keyword jacKeyword let in val end fn if then else
 syntax keyword jacKeyword asv usv fs rs
 syntax match jacKeyword ":set"
-syntax match jacKeyword ":block"
 syntax match jacKeyword "@include"
 
 syntax region jacRegex start="/" end="/"
